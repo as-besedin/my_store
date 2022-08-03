@@ -18,3 +18,12 @@ jobs:
         run: ./cm selenoid start --vnc
       - name: "Запускаем selenoid-ui"
         run: ./cm selenoid-ui start
+        
+  run_test:
+    runs-on: ubuntu-latest
+    needs: install_dependency
+    steps:
+      - name: "Используем main репазиторий"
+        uses: actions/checkout@v1
+      - name: "Запускаем тесты"
+        run: mvn clean test

@@ -11,5 +11,6 @@ jobs:
       - run: chmod +x ./cm
       - run: ./cm selenoid start --vnc
       - run: ./cm selenoid-ui start
-      - run: mvn clean test
+      - run: echo ifconfig
+#       - run: mvn clean test
   

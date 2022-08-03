@@ -12,5 +12,5 @@ jobs:
       - run: ./cm selenoid start --vnc
       - run: ./cm selenoid-ui start
       - run: ifconfig
-#       - run: mvn clean test
+      - run: mvn clean test
   

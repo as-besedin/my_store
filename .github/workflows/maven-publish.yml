@@ -7,10 +7,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v1
+      - run: ifconfig
       - run: curl -s https://aerokube.com/cm/bash  | bash
       - run: chmod +x ./cm
       - run: ./cm selenoid start --vnc
       - run: ./cm selenoid-ui start
-      - run: ifconfig
       - run: mvn clean test
   

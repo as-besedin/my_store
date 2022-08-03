@@ -7,7 +7,7 @@ on:
   push
 
 jobs:
-  install_dependency:
+  install_dependency_and_run_test:
     runs-on: ubuntu-latest
     steps:
       - name: "Скачиваем селенойд"
@@ -18,12 +18,7 @@ jobs:
         run: ./cm selenoid start --vnc
       - name: "Запускаем selenoid-ui"
         run: ./cm selenoid-ui start
-        
-  run_test:
-    runs-on: ubuntu-latest
-    needs: install_dependency
-    steps:
-      - name: "Используем main репазиторий"
+      - name: "Используем main репозиторий"
         uses: actions/checkout@v1
       - name: "Запускаем тесты"
         run: mvn clean test

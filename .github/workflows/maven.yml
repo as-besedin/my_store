@@ -1,7 +1,7 @@
 name: Run test 
 
 env:
-  OS: "ubuntu-latest"
+  OS: ubuntu-latest
   
 on:
   push

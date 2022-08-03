@@ -8,13 +8,13 @@ on:
 
 jobs:
   install_dependency:
-    runs-on: $OS
+    runs-on: ubuntu-latest
     steps:
       - name: "sfvdsvsdfv"
         run: echo "Hello world!"
       
   run_test:
-    runs-on: $OS
+    runs-on: ubuntu-latest
     steps:
       - name: "fdsfdsbvdsgb"
         run: echo "fsvsdfkhvbsdkjfhv"

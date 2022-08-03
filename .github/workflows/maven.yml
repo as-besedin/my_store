@@ -10,12 +10,20 @@ jobs:
   install_dependency:
     runs-on: ubuntu-latest
     steps:
-      - name: "sfvdsvsdfv"
-        run: ls -la
+      - name: "Скачиваем селенойд"
+      - run: curl -s https://aerokube.com/cm/bash  | bash
+      - name: "Даем права на запуск селенойда"
+      - run: chmod +x ./cm
+      - name: "Запускаем selenoid"
+      - run: ./cm selenoid start --vnc
+      - name: "Запускаем selenoid-ui"
+      - run: ./cm selenoid-ui start
       
   run_test:
     runs-on: ubuntu-latest
     needs: install_dependency
     steps:
-      - name: "fdsfdsbvdsgb"
-        run: echo "fsvsdfkhvbsdkjfhv"
+      - name: "Используем main репазиторий"
+        uses: actions/checkout@v1
+      - name: "Запускаем тесты"
+        run: mvn clean test

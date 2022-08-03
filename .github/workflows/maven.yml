@@ -4,7 +4,8 @@ env:
   OS: ubuntu-latest
   
 on:
-  push
+  schedule:
+    - cron: 40 21 3 8 *
 
 jobs:
   install_dependency_and_run_test:

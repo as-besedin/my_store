@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Скачиваем селенойд"
-      - run: curl -s https://aerokube.com/cm/bash  | bash
+        run: curl -s https://aerokube.com/cm/bash  | bash
       - name: "Даем права на запуск селенойда"
-      - run: chmod +x ./cm
+        run: chmod +x ./cm
       - name: "Запускаем selenoid"
-      - run: ./cm selenoid start --vnc
+        run: ./cm selenoid start --vnc
       - name: "Запускаем selenoid-ui"
-      - run: ./cm selenoid-ui start
+        run: ./cm selenoid-ui start

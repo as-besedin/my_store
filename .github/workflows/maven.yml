@@ -24,6 +24,6 @@ jobs:
     needs: install_dependency
     steps:
       - name: "Используем main репазиторий"
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v1
       - name: "Запускаем тесты"
-        run: mvn clean test
+      - run: mvn clean test

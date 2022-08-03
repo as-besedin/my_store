@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "sfvdsvsdfv"
-        run: echo "Hello world!"
+        run: ls -la
       
   run_test:
     runs-on: ubuntu-latest
+    needs: install_dependency
     steps:
       - name: "fdsfdsbvdsgb"
         run: echo "fsvsdfkhvbsdkjfhv"

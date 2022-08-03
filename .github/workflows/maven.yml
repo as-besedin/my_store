@@ -5,7 +5,7 @@ env:
   
 on:
   schedule:
-    - cron: "45 18 3 8 *"
+    - cron: '44 18 3 8 *'
 
 jobs:
   install_dependency_and_run_test:

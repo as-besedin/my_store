@@ -3,9 +3,7 @@ name: Run test
 env:
   OS: ubuntu-latest
   
-on:
-  schedule:
-    - cron: '44 18 3 8 *'
+on: push
 
 jobs:
   install_dependency_and_run_test:

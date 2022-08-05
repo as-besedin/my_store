@@ -22,6 +22,7 @@ jobs:
       - name: "Запускаем тесты"
         run: mvn clean test
       - name: Post the link to the report
+        uses: actions/checkout@v1
         if: always()
         with: 
           authToken: ${{secrets.GITHUB_TOKEN}}

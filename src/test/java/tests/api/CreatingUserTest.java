@@ -20,7 +20,7 @@ public class CreatingUserTest {
         assertEquals(job, actualCreateUserData.getJob());
     }
 
-    @Test
+//    @Test
     public void failCreateUserWithoutBody() {
         UsersApi.createUserFail();
     }

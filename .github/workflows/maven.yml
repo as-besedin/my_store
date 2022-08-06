@@ -27,6 +27,8 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     steps:
+      - name: "test"
+        run: ls -la
       - name: "Генерируем аллюр-репорт"
         uses: simple-elf/allure-report-action@master
         id: allure-report

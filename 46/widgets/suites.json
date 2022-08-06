@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"5fff51b597562bd3e76c9764d43b55ca","name":"tests.api.GettingUserTest","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}},{"uid":"fe6fd93683ae037034d220f0b2f6ec37","name":"tests.api.CreatingUserTest","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

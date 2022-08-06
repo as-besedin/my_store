@@ -24,4 +24,4 @@ jobs:
       - name: "Запускаем тесты"
         run: mvn clean test
       - name: "Смотрим текущую директорию"
-        run: ls -la
+        run: cd allure-results

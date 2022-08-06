@@ -62,4 +62,15 @@ public class UsersApi {
                 .then()
                 .spec(getResponseSpec(SC_BAD_REQUEST));
     }
+
+    public static void getUsers(int page, int perPage) {
+        given()
+                .spec(getRequestSpec())
+                .when()
+                .queryParam("page", page)
+                .queryParam("per_page", perPage)
+                .get(USERS.getUrl())
+                .then()
+                .spec(getResponseSpec(SC_OK));
+    }
 }

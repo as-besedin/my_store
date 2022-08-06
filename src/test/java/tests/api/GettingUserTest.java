@@ -30,4 +30,9 @@ public class GettingUserTest {
         int userId = 23;
         UsersApi.getUserFail(userId);
     }
+
+    @Test
+    public void checkingGetUsers() {
+        UsersApi.getUsers(1, 12);
+    }
 }

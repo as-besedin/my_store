@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Aug 06 15:32:19 GMT 2022","Sat Aug 06 15:32:23 GMT 2022","3124","","tests.api.GettingUserTest","","tests.api.GettingUserTest","checkingGetUser","checkingGetUser",""
+"passed","Sat Aug 06 15:32:24 GMT 2022","Sat Aug 06 15:32:24 GMT 2022","577","","tests.api.CreatingUserTest","","tests.api.CreatingUserTest","checkingCreateUser","checkingCreateUser",""
+"passed","Sat Aug 06 15:32:23 GMT 2022","Sat Aug 06 15:32:24 GMT 2022","443","","tests.api.GettingUserTest","","tests.api.GettingUserTest","checkingGetUsers","checkingGetUsers",""
+"passed","Sat Aug 06 15:32:25 GMT 2022","Sat Aug 06 15:32:40 GMT 2022","15037","","tests.BucketTest","","tests.BucketTest","checkingIncorrectNumber","Некорректный номер при заказе товара",""
+"passed","Sat Aug 06 15:32:24 GMT 2022","Sat Aug 06 15:32:25 GMT 2022","543","","tests.api.CreatingUserTest","","tests.api.CreatingUserTest","failCreateUser","failCreateUser",""
+"passed","Sat Aug 06 15:32:23 GMT 2022","Sat Aug 06 15:32:23 GMT 2022","475","","tests.api.GettingUserTest","","tests.api.GettingUserTest","checkingGetUserFail","checkingGetUserFail",""

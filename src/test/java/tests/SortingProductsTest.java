@@ -6,7 +6,7 @@ import pages.WearPage;
 
 public class SortingProductsTest extends BaseTest {
 
-//    @Test()
+    @Test()
     public void checkingSortProductsByCost() {
         HomePage homePage = new HomePage();
         homePage.openPage()

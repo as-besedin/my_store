@@ -9,7 +9,7 @@ import pages.WearPage;
 
 public class BucketTest extends BaseTest {
 
-//    @Test
+    @Test
     @DisplayName("Некорректный номер при заказе товара")
     public void checkingIncorrectNumber() {
         HomePage homePage = new HomePage();

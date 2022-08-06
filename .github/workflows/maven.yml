@@ -28,6 +28,7 @@ jobs:
         run: mvn clean test
         
       - name: "Генерируем аллюр-репорт"
+        if: failure() && steps.integrationTests.outcome == 'failure'
         uses: simple-elf/allure-report-action@master
         id: allure-report
         with:

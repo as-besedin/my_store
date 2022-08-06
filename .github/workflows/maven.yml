@@ -23,3 +23,5 @@ jobs:
         run: ls -la
       - name: "Запускаем тесты"
         run: mvn clean test
+      - name: "Смотрим текущую директорию"
+        run: ls -la

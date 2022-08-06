@@ -11,24 +11,22 @@ jobs:
     steps:
       - name: "Скачиваем селенойд"
         run: curl -s https://aerokube.com/cm/bash  | bash
+        
       - name: "Даем права на запуск селенойда"
         run: chmod +x ./cm
+        
       - name: "Запускаем selenoid"
         run: ./cm selenoid start --vnc
+        
       - name: "Запускаем selenoid-ui"
         run: ./cm selenoid-ui start
+        
       - name: "Используем main репозиторий"
         uses: actions/checkout@v1
+        
       - name: "Запускаем тесты"
         run: mvn clean test
-  
-  generate_allure_report:
-    needs: [install_dependency_and_run_test]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - name: "test"
-        run: ls -la
+        
       - name: "Генерируем аллюр-репорт"
         uses: simple-elf/allure-report-action@master
         id: allure-report
@@ -37,12 +35,7 @@ jobs:
           gh_pages: gh-pages
           allure_report: allure-report
           allure_history: allure-history
-  
-  push_allure_report:
-    needs: [generate_allure_report]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: "Пушим аллюр-репорт в ветку gh-pages"
         uses: peaceiris/actions-gh-pages@v2
         env:

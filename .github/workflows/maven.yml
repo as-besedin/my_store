@@ -19,12 +19,11 @@ jobs:
 #         run: ./cm selenoid-ui start
       - name: "Используем main репозиторий"
         uses: actions/checkout@v1
-      - name: "Смотрим текущую директорию"
-        run: ls -la
       - name: "Запускаем тесты"
         run: mvn clean test
       - name: Post the link to the report
         if: always()
+        uses: actions/checkout@v1
         with: 
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: 'Test report'
